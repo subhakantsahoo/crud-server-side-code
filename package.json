@@ -1,0 +1,32 @@
+{
+  "name": "todo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon"
+  },
+  "author": "sipun",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.4.0",
+    "bcrypt": "^5.1.0",
+    "cors": "^2.8.5",
+    "diskusage": "^1.1.3",
+    "dotenv": "^16.0.3",
+    "envo": "^0.0.3",
+    "express": "^4.18.2",
+    "gpu-info": "^0.0.1",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^6.10.0",
+    "node-nvidia-smi": "^1.0.0",
+    "nodemon": "^2.0.22",
+    "os-utils": "^0.0.14",
+    "passport": "^0.6.0",
+    "passport-jwt": "^4.0.1",
+    "passport-local": "^1.0.0",
+    "request-ip": "^3.3.0",
+    "systeminformation": "^5.18.7"
+  }
+}

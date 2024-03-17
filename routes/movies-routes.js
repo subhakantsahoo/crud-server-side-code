@@ -1,0 +1,11 @@
+const routes = require("express").Router();
+//const { post, get } = require('.');
+const Movies = require("../services/movies-service");
+let MoviesService = new Movies();
+routes.post("/create", MoviesService.create);
+routes.get("/get", MoviesService.get);
+routes.patch("/:id", MoviesService.update);
+routes.delete("/:id", MoviesService.delete);
+routes.get("/one/:id", MoviesService.getbyid);
+routes.get("/search/:title", MoviesService.search);
+module.exports = routes;

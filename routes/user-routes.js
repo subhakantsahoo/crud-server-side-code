@@ -1,0 +1,11 @@
+    const routes=require('express').Router();
+    //const { post, get } = require('.');
+    const User=require('../services/user-service');
+    let userservice=new User();
+    routes.post("/create",userservice.create);
+    routes.get("/get",userservice.get);
+    routes.patch("/:id",userservice.update);
+    routes.delete("/:id",userservice.delete);
+    routes.get("/one/:id",userservice.getbyid);
+    routes.post("/login",userservice.checkLogin);
+    module.exports=routes;
