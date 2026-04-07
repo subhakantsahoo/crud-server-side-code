@@ -1,6 +1,6 @@
 
 const app = require('express')();
-const port = 3000;
+const port = process.env.PORT || 3000;
  const passport=require('passport');
 const bodyParser=require('body-parser');
 const{connectMongo}=require("./config/connect");
@@ -22,6 +22,5 @@ app.listen(port, () => {
 
 app.use('/api',routes);
   
-
 
 
